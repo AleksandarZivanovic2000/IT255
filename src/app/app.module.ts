@@ -8,6 +8,9 @@ import { NavigacijaComponent } from './navigacija/navigacija.component';
 import { PrikazRezervacijeComponent } from './prikaz-rezervacije/prikaz-rezervacije.component';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
+import { ONamaComponent } from './navigacija/o-nama/o-nama.component';
+import { PonudaComponent } from './navigacija/ponuda/ponuda.component';
+import { PreporukaComponent } from './navigacija/preporuka/preporuka.component';
 
 
 @NgModule({
@@ -16,7 +19,10 @@ import { FooterComponent } from './footer/footer.component';
     KreiranjeRezervacijeComponent,
     NavigacijaComponent,
     PrikazRezervacijeComponent,
-    FooterComponent
+    FooterComponent,
+    ONamaComponent,
+    PonudaComponent,
+    PreporukaComponent
   ],
   imports: [
     BrowserModule,
