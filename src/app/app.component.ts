@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   podaci: { ime: string, prezime: string, brojNocenja: number }[] = [];
-
+  title='MetHotels';
   dodajPodatke(podatak: { ime: string, prezime: string, brojNocenja: number }) {
     this.podaci.push(podatak);
   }

@@ -7,10 +7,12 @@ import { KreiranjeRezervacijeComponent } from './kreiranje-rezervacije/kreiranje
 import { NavigacijaComponent } from './navigacija/navigacija.component';
 import { PrikazRezervacijeComponent } from './prikaz-rezervacije/prikaz-rezervacije.component';
 import { FormsModule } from '@angular/forms';
-import { FooterComponent } from './footer/footer.component';
 import { ONamaComponent } from './navigacija/o-nama/o-nama.component';
 import { PonudaComponent } from './navigacija/ponuda/ponuda.component';
 import { PreporukaComponent } from './navigacija/preporuka/preporuka.component';
+import { NovaSobaComponent } from './funkcionalnost/validacija/validacija.component';
+
+
 
 
 @NgModule({
@@ -19,10 +21,11 @@ import { PreporukaComponent } from './navigacija/preporuka/preporuka.component';
     KreiranjeRezervacijeComponent,
     NavigacijaComponent,
     PrikazRezervacijeComponent,
-    FooterComponent,
     ONamaComponent,
     PonudaComponent,
-    PreporukaComponent
+    PreporukaComponent,
+    NovaSobaComponent
+
   ],
   imports: [
     BrowserModule,
