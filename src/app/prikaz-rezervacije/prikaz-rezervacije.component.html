@@ -1,0 +1,18 @@
+<div class="container mt-4">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Ime</th>
+        <th>Prezime</th>
+        <th>Broj Nocenja</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let podatak of podaci">
+        <td>{{ podatak.ime }}</td>
+        <td>{{ podatak.prezime }}</td>
+        <td>{{ podatak.brojNocenja }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

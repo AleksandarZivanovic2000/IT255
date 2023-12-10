@@ -1,0 +1,43 @@
+<form (ngSubmit)="dodajSobu()" #forma="ngForm">
+    <div class="form-group">
+      <label for="brojSobe">Broj sobe:</label>
+      <input type="number" id="brojSobe" name="brojSobe" required [(ngModel)]="novaSoba.broj">
+      <div *ngIf="forma.controls['brojSobe'].invalid && (forma.controls['brojSobe'].dirty || forma.controls['brojSobe'].touched)">
+        <span *ngIf="forma.controls['brojSobe'].errors?.required">Molimo unesite broj sobe.</span>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="tipSobe">Tip sobe:</label>
+      <input type="text" id="tipSobe" name="tipSobe" required [(ngModel)]="novaSoba.tip">
+      <div *ngIf="forma.controls['tipSobe'].invalid && (forma.controls['tipSobe'].dirty || forma.controls['tipSobe'].touched)">
+        <span *ngIf="forma.controls['tipSobe'].errors?.required">Molimo unesite tip sobe.</span>
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label for="cena">Cena:</label>
+      <input type="number" id="cena" name="cena" required [(ngModel)]="novaSoba.cena">
+      <div *ngIf="forma.controls['cena'].invalid && (forma.controls['cena'].dirty || forma.controls['cena'].touched)">
+        <span *ngIf="forma.controls['cena'].errors?.required">Molimo unesite cenu.</span>
+      </div>
+    </div>
+    
+    <div class="form-group">
+        <label>Dodati servisi:</label><br>
+        <label><input type="checkbox" name="klima" [(ngModel)]="novaSoba.klima"> Klima</label><br>
+        <label><input type="checkbox" name="miniBar" [(ngModel)]="novaSoba.miniBar"> Mini Bar</label><br>
+        <label><input type="checkbox" name="sauna" [(ngModel)]="novaSoba.sauna"> Sauna</label><br>
+      </div>
+
+      <div *ngIf="novaSoba.klima || novaSoba.miniBar || novaSoba.sauna">
+        <p>Vaš račun je uvećan za:</p>
+        <p *ngIf="novaSoba.klima">Klima - 100 dinara</p>
+        <p *ngIf="novaSoba.miniBar">Mini Bar - 50 dinara</p>
+        <p *ngIf="novaSoba.sauna">Sauna - 150 dinara</p>
+      </div>
+      
+    <button type="submit" [disabled]="forma.invalid">Dodaj sobu</button>
+  </form>
+
+

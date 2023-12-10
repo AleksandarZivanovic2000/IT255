@@ -1,0 +1,29 @@
+.offer {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .offer h2 {
+    color: #333;
+  }
+  
+  .offer-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .offer-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .offer-item h3 {
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  .offer-item p {
+    color: #777;
+  }

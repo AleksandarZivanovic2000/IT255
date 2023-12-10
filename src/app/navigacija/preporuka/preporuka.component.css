@@ -1,0 +1,27 @@
+.recommendation {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .recommendation h2 {
+    color: #333;
+  }
+  
+  .recommendation-category {
+    margin-bottom: 15px;
+  }
+  
+  .recommendation-category h3 {
+    color: #555;
+  }
+  
+  .recommendation-category ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .recommendation-category ul li {
+    margin-left: 20px;
+    color: #777;
+  }
