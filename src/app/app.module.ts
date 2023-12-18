@@ -13,6 +13,8 @@ import { PreporukaComponent } from './navigacija/preporuka/preporuka.component';
 import { NovaSobaComponent } from './funkcionalnost/validacija/validacija.component';
 import { DIComponent } from './di/di.component';
 import { RoomService } from './services/RoomService';
+import { AddRoomComponent } from './add-room/add-room.component';
+import {HttpClientModule} from '@angular/common/http';
 
 
 
@@ -29,13 +31,15 @@ import { RoomService } from './services/RoomService';
     PreporukaComponent,
     NovaSobaComponent,
     DIComponent,
+    AddRoomComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [RoomService],
   bootstrap: [AppComponent]
