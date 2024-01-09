@@ -1,19 +1,24 @@
 {
   "sobe": [
     {
-      "idSobe": 1,
-      "nazivSobe": "Jednokrevetna",
+      "id": 1,
+      "naziv": "Jednokrevetna",
       "cena": 50
     },
     {
-      "idSobe": 2,
-      "nazivSobe": "Dvokrevetna",
+      "id": 2,
+      "naziv": "Dvokrevetna",
       "cena": 80
     },
     {
-      "idSobe": 3,
-      "nazivSobe": "Apartman",
+      "id": 3,
+      "naziv": "Apartman",
       "cena": 120
+    },
+    {
+      "id": 4,
+      "naziv": "Petokrevetna",
+      "cena": "150"
     }
   ]
 }

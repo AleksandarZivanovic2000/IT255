@@ -9,12 +9,12 @@ import { PrikazRezervacijeComponent } from './prikaz-rezervacije/prikaz-rezervac
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ONamaComponent } from './navigacija/o-nama/o-nama.component';
 import { PonudaComponent } from './navigacija/ponuda/ponuda.component';
-import { PreporukaComponent } from './navigacija/preporuka/preporuka.component';
 import { NovaSobaComponent } from './funkcionalnost/validacija/validacija.component';
 import { DIComponent } from './di/di.component';
 import { RoomService } from './services/RoomService';
 import { AddRoomComponent } from './add-room/add-room.component';
 import {HttpClientModule} from '@angular/common/http';
+import { PocetnaComponent } from './pocetna/pocetna.component';
 
 
 
@@ -28,10 +28,10 @@ import {HttpClientModule} from '@angular/common/http';
     PrikazRezervacijeComponent,
     ONamaComponent,
     PonudaComponent,
-    PreporukaComponent,
     NovaSobaComponent,
     DIComponent,
     AddRoomComponent,
+    PocetnaComponent
 
   ],
   imports: [

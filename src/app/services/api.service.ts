@@ -30,8 +30,8 @@ export class ApiService {
     return this.http.post<any>(this.baseUrl, room).pipe(map((data: any) => this._createRoomFromObject(data)));
   }
 
-  public updateRoom(id: number, updatedRoom: Room): Observable<Room> {
-    return this.http.put<Room>(this.baseUrl, updatedRoom);
+  public updateRoom(updatedRoom: Room): Observable<Room> {
+    return this.http.put<Room>(this.baseUrl, updatedRoom).pipe(map((data:any)=> this._createRoomFromObject(data)));
   }
 
   private _createRoomFromObject(item: any) {

@@ -44,7 +44,14 @@ export class AddRoomComponent implements OnInit {
     }
    }
 
-  ngOnInit(): void {
+   ngOnInit(): void {
+    this.loadRooms();
+  }
+
+  loadRooms(): void {
+    this.servis.getRooms().subscribe(data => {
+      this.rooms = data;
+    });
   }
 
   
@@ -63,4 +70,7 @@ export class AddRoomComponent implements OnInit {
     let ind = this.rooms.findIndex(room => room.id == id);
     this.rooms.splice(ind,1);
   }
+
+
+
 }
