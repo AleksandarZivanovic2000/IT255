@@ -2,12 +2,12 @@ import { Optional } from "@angular/core"
 
 export class Room{
     id!:number
-    nazivSobe!:string
-    cenaSobe!:number
+    naziv!:string
+    cena!:number
 
-    constructor(@Optional() id:number, nazivSobe:string,  cenaSobe:number){
+    constructor(@Optional() id:number, naziv:string,  cena:number){
         this.id =id
-        this.nazivSobe= nazivSobe
-        this.cenaSobe = cenaSobe
+        this.naziv= naziv
+        this.cena = cena
     }
 }

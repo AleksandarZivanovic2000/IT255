@@ -27,16 +27,15 @@
       <tbody>
         <tr *ngFor="let room of rooms">
           <td>{{room.id}}</td>
-          <td>{{room.nazivSobe}}</td>
-          <td>{{room.cenaSobe}}</td>
+          <td>{{room.naziv}}</td>
+          <td>{{room.cena}}</td>
           <td>
             <button (click)="getRoom(room.id)" type="button" class="btn btn-primary">Get room</button>
-          </td>
-          <td>
             <button (click)="deleteRoom(room.id)" type="button" class="btn btn-danger">Delete room</button>
           </td>
         </tr>
       </tbody>
     </table>
   </div>
+
   
