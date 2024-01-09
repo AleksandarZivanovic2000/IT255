@@ -6,11 +6,16 @@ import { AppComponent } from './app.component';
 import { KreiranjeRezervacijeComponent } from './kreiranje-rezervacije/kreiranje-rezervacije.component';
 import { NavigacijaComponent } from './navigacija/navigacija.component';
 import { PrikazRezervacijeComponent } from './prikaz-rezervacije/prikaz-rezervacije.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ONamaComponent } from './navigacija/o-nama/o-nama.component';
 import { PonudaComponent } from './navigacija/ponuda/ponuda.component';
 import { PreporukaComponent } from './navigacija/preporuka/preporuka.component';
 import { NovaSobaComponent } from './funkcionalnost/validacija/validacija.component';
+import { DIComponent } from './di/di.component';
+import { RoomService } from './services/RoomService';
+import { AddRoomComponent } from './add-room/add-room.component';
+import {HttpClientModule} from '@angular/common/http';
+
 
 
 
@@ -24,15 +29,19 @@ import { NovaSobaComponent } from './funkcionalnost/validacija/validacija.compon
     ONamaComponent,
     PonudaComponent,
     PreporukaComponent,
-    NovaSobaComponent
+    NovaSobaComponent,
+    DIComponent,
+    AddRoomComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [RoomService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
