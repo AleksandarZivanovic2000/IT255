@@ -1,0 +1,10 @@
+<form [formGroup]="hotelForm" (ngSubmit)="calculateTotalPrice()">
+    <label for="numberOfNights">Broj noći:</label>
+    <input type="number" id="numberOfNights" formControlName="numberOfNights" required />
+
+    <button type="submit">Izračunaj cenu</button>
+</form>
+
+<div *ngIf="totalPrice !== undefined">
+    Ukupna cena: {{ totalPrice }}
+</div>
