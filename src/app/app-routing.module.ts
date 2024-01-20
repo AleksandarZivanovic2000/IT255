@@ -6,6 +6,7 @@ import { DIComponent } from './di/di.component';
 import { KreiranjeRezervacijeComponent } from './kreiranje-rezervacije/kreiranje-rezervacije.component';
 import { AddRoomComponent } from './add-room/add-room.component';
 import { PocetnaComponent } from './pocetna/pocetna.component';
+import { ReduxComponent } from './redux/redux.component';
 
 
 const routes: Routes = [
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path:"ponuda", component:PonudaComponent},
   {path:"di", component:DIComponent},
   {path:"rezervacija", component:KreiranjeRezervacijeComponent},
-  {path:"sobe",component:AddRoomComponent}
+  {path:"sobe",component:AddRoomComponent},
+  {path:"redux", component:ReduxComponent}
 ];
 
 @NgModule({
