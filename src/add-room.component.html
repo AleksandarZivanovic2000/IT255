@@ -1,0 +1,41 @@
+<form [formGroup]="roomForm" class="container mt-5 pt-5" (ngSubmit)="submitRoom()">
+    <div class="form-group">
+      <label for="title">Naziv sobe</label>
+      <input type="text" class="form-control" formControlName="nazivSobe" name="nazivSobe">
+    </div>
+  
+    <div class="form-group">
+      <label for="body">Cena sobe</label>
+      <input type="text" class="form-control" formControlName="cenaSobe" name="cenaSobe">
+    </div>
+    <div class="col button-holder d-flex justify-content-center align-items-center
+  mt-4">
+      <button type="submit" name="submit" class="btn btn-success">Dodaj</button>
+    </div>
+  </form>
+
+  <div class="container mt-5 pt-5">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Naziv sobe</th>
+          <th scope="col">Cena sobe</th>
+          <th scope="col">Options</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let room of rooms">
+          <td>{{room.id}}</td>
+          <td>{{room.naziv}}</td>
+          <td>{{room.cena}}</td>
+          <td>
+            <button (click)="getRoom(room.id)" type="button" class="btn btn-primary">Get room</button>
+            <button (click)="deleteRoom(room.id)" type="button" class="btn btn-danger">Delete room</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  
